@@ -14,6 +14,9 @@
 		D7647CF02B6FDBD80083F96C /* ExpenseTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7647CEF2B6FDBD80083F96C /* ExpenseTrackTests.swift */; };
 		D7647CFA2B6FDBD80083F96C /* ExpenseTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7647CF92B6FDBD80083F96C /* ExpenseTrackUITests.swift */; };
 		D7647CFC2B6FDBD80083F96C /* ExpenseTrackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7647CFB2B6FDBD80083F96C /* ExpenseTrackUITestsLaunchTests.swift */; };
+		D7647D0D2B6FDCA50083F96C /* IntroScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7647D0C2B6FDCA50083F96C /* IntroScreen.swift */; };
+		D7647D102B6FDDEC0083F96C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7647D0F2B6FDDEC0083F96C /* Constants.swift */; };
+		D76AACA72B6FE1C8006795D2 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76AACA62B6FE1C8006795D2 /* Tab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		D7647CF52B6FDBD80083F96C /* ExpenseTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7647CF92B6FDBD80083F96C /* ExpenseTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackUITests.swift; sourceTree = "<group>"; };
 		D7647CFB2B6FDBD80083F96C /* ExpenseTrackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D7647D0C2B6FDCA50083F96C /* IntroScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroScreen.swift; sourceTree = "<group>"; };
+		D7647D0F2B6FDDEC0083F96C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D76AACA62B6FE1C8006795D2 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,9 @@
 		D7647CDD2B6FDBD50083F96C /* ExpenseTrack */ = {
 			isa = PBXGroup;
 			children = (
+				D7647D0E2B6FDDCC0083F96C /* Helpers */,
+				D7647D092B6FDC860083F96C /* Model */,
+				D7647D082B6FDC7C0083F96C /* View */,
 				D7647CDE2B6FDBD50083F96C /* ExpenseTrackApp.swift */,
 				D7647CE02B6FDBD50083F96C /* ContentView.swift */,
 				D7647CE22B6FDBD70083F96C /* Assets.xcassets */,
@@ -125,6 +134,30 @@
 				D7647CFB2B6FDBD80083F96C /* ExpenseTrackUITestsLaunchTests.swift */,
 			);
 			path = ExpenseTrackUITests;
+			sourceTree = "<group>";
+		};
+		D7647D082B6FDC7C0083F96C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D7647D0C2B6FDCA50083F96C /* IntroScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7647D092B6FDC860083F96C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D76AACA62B6FE1C8006795D2 /* Tab.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7647D0E2B6FDDCC0083F96C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D7647D0F2B6FDDEC0083F96C /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +291,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7647CE12B6FDBD50083F96C /* ContentView.swift in Sources */,
+				D7647D0D2B6FDCA50083F96C /* IntroScreen.swift in Sources */,
+				D76AACA72B6FE1C8006795D2 /* Tab.swift in Sources */,
 				D7647CDF2B6FDBD50083F96C /* ExpenseTrackApp.swift in Sources */,
+				D7647D102B6FDDEC0083F96C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +471,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ExpenseTrack;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ExpenseTracks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -464,7 +500,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ExpenseTrack;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ExpenseTracks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
