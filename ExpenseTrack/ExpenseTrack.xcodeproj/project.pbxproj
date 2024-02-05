@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D74672F92B7132560049EB35 /* DateFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74672F82B7132560049EB35 /* DateFilterView.swift */; };
+		D74672FD2B717E990049EB35 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74672FC2B717E990049EB35 /* LockView.swift */; };
 		D7647CDF2B6FDBD50083F96C /* ExpenseTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7647CDE2B6FDBD50083F96C /* ExpenseTrackApp.swift */; };
 		D7647CE12B6FDBD50083F96C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7647CE02B6FDBD50083F96C /* ContentView.swift */; };
 		D7647CE32B6FDBD70083F96C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7647CE22B6FDBD70083F96C /* Assets.xcassets */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D74672F82B7132560049EB35 /* DateFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFilterView.swift; sourceTree = "<group>"; };
+		D74672FC2B717E990049EB35 /* LockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
 		D7647CDB2B6FDBD50083F96C /* ExpenseTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7647CDE2B6FDBD50083F96C /* ExpenseTrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackApp.swift; sourceTree = "<group>"; };
 		D7647CE02B6FDBD50083F96C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -208,6 +212,8 @@
 				D76AACBD2B7022DE006795D2 /* CardView.swift */,
 				D76AACC02B702CA5006795D2 /* TransactionCardView.swift */,
 				D7AC4AB92B703C3F00776CF7 /* SwipeAction.swift */,
+				D74672F82B7132560049EB35 /* DateFilterView.swift */,
+				D74672FC2B717E990049EB35 /* LockView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -344,6 +350,7 @@
 			files = (
 				D76AACB82B6FE9B1006795D2 /* Charts.swift in Sources */,
 				D76AACAD2B6FE7C6006795D2 /* TintColor.swift in Sources */,
+				D74672F92B7132560049EB35 /* DateFilterView.swift in Sources */,
 				D76AACB02B6FE96D006795D2 /* Recents.swift in Sources */,
 				D76AACAB2B6FE6C1006795D2 /* Transaction.swift in Sources */,
 				D76AACBE2B7022DE006795D2 /* CardView.swift in Sources */,
@@ -355,6 +362,7 @@
 				D7647CDF2B6FDBD50083F96C /* ExpenseTrackApp.swift in Sources */,
 				D76AACBC2B7020F2006795D2 /* Date+Extensions.swift in Sources */,
 				D76AACBA2B701992006795D2 /* View+Extensions.swift in Sources */,
+				D74672FD2B717E990049EB35 /* LockView.swift in Sources */,
 				D76AACB22B6FE97B006795D2 /* Search.swift in Sources */,
 				D7647D102B6FDDEC0083F96C /* Constants.swift in Sources */,
 				D76AACA92B6FE66E006795D2 /* Category.swift in Sources */,
@@ -525,6 +533,7 @@
 				DEVELOPMENT_TEAM = KSW9YLW73D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = DESCRIPTION;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -554,6 +563,7 @@
 				DEVELOPMENT_TEAM = KSW9YLW73D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = DESCRIPTION;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
