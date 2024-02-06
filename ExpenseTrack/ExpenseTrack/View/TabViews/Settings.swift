@@ -11,7 +11,7 @@ struct Settings: View {
     /// User Properties
     @AppStorage("userName") private var userName: String = ""
     /// App Lock Properties
-    @AppStorage("isAppLockEnabled") private var isAppLockedEnabled: Bool = false
+    @AppStorage("isAppLockEnabled") private var isAppLockEnabled: Bool = false
     @AppStorage("lockWhenAppGoesBackground") private var lockWhenAppGoesBackground: Bool = false
     var body: some View {
         NavigationStack {
@@ -21,9 +21,9 @@ struct Settings: View {
                 }
                 
                 Section("App Lock") {
-                    Toggle("Enable App Lock", isOn: $isAppLockedEnabled )
+                    Toggle("Enable App Lock", isOn: $isAppLockEnabled )
                     
-                    if isAppLockedEnabled {
+                    if isAppLockEnabled {
                         Toggle("Lock When App Goes Background", isOn: $lockWhenAppGoesBackground)
                     }
                 }

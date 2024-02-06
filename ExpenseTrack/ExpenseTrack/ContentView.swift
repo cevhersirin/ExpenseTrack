@@ -11,12 +11,12 @@ struct ContentView: View {
     /// Visibility Status
     @AppStorage("isFirstTime") private var isFirtTime: Bool = true
     /// App Lock Properties
-    @AppStorage("isAppLockEnabled") private var isAppLockedEnabled: Bool = false
+    @AppStorage("isAppLockEnabled") private var isAppLockEnabled: Bool = false
     @AppStorage("lockWhenAppGoesBackground") private var lockWhenAppGoesBackground: Bool = false
     /// Active Tab
     @State private var activeTab: Tab = .recents
     var body: some View {
-        LockView(lockType: .biometric, lockPin: "", isEnabled: isAppLockedEnabled, lockWhenAppGoesBackground: lockWhenAppGoesBackground) {
+        LockView(lockType: .biometric, lockPin: "", isEnabled: isAppLockEnabled, lockWhenAppGoesBackground: lockWhenAppGoesBackground) {
             TabView(selection: $activeTab) {
                 Recents()
                     .tag(Tab.recents)

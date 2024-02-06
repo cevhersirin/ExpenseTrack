@@ -8,3 +8,5 @@
 import SwiftUI
 
 let appTint: Color = .blue
+let incomeTint: Color = .green
+let expenseTint: Color = .red
