@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct NewExpenseView: View {
+    /// Env Properties
+    @Environment(\.modelContext) private var context
+    @Environment(\.dismiss) private var dismiss
+    var editTransaction: Transaction?
     /// View Properties
     @State private var title: String = ""
     @State private var remarks: String = ""
@@ -15,7 +19,7 @@ struct NewExpenseView: View {
     @State private var dateAdded: Date = .now
     @State private var category: Category = .expense
     /// Random Tint
-    var tint: TintColor = tints.randomElement()!
+    @State var tint: TintColor = tints.randomElement()!
     var body: some View {
         ScrollView(.vertical) {
             VStack(spacing: 15) {
@@ -44,13 +48,21 @@ struct NewExpenseView: View {
                         .foregroundStyle(.gray)
                         .hSpacing(.leading)
                     
+                    // TODO Better UI
                     HStack(spacing: 15) {
-                        TextField("0.0", value: $amount, formatter: numberFormatter)
+                        HStack(spacing: 4) {
+                            Text(currencySymbol)
+                                .font(.callout.bold())
+                            
+                            TextField("0.0", value: $amount, formatter: numberFormatter)
+                                .keyboardType(.decimalPad)
+                                
+
+                        }
                             .padding(.horizontal, 15)
                             .padding(.vertical, 12)
                             .background(.background, in: .rect(cornerRadius: 10))
                             .frame(maxWidth: 130)
-                            .keyboardType(.decimalPad)
                         
                         /// Custom Check Box
                         CategoryCheckBox()
@@ -74,18 +86,45 @@ struct NewExpenseView: View {
             }
             .padding(15)
         }
-        .navigationTitle("Add Transaction")
+        .navigationTitle("\(editTransaction == nil ? "Add" : "Edit") Transaction")
         .background(.gray.opacity(0.15))
         .toolbar(content: {
             ToolbarItem(placement: .topBarTrailing) {
                 Button("Save", action: save)
             }
         })
+        .onAppear(perform: {
+            if let editTransaction {
+                /// Load All Existing Data from the Transaction
+                title = editTransaction.title
+                remarks = editTransaction.remarks
+                dateAdded = editTransaction.dateAdded
+                if let category = editTransaction.rawCategory {
+                    self.category = category
+                }
+                amount = editTransaction.amount
+                if let tint = editTransaction.tint {
+                    self.tint = tint
+                }
+            }
+        })
     }
     
     /// Saving Data
     func save() {
-        
+        /// Saving Item to SwiftData
+        if editTransaction != nil {
+            editTransaction?.title = title
+            editTransaction?.remarks = remarks
+            editTransaction?.dateAdded = dateAdded
+            editTransaction?.amount = amount
+            editTransaction?.category = category.rawValue
+        } else {
+            let transaction = Transaction(title: title, remarks: remarks, amount: amount, dateAdded: dateAdded, category: category, tintColor: tint)
+            context.insert(transaction)
+        }
+        /// Dismissing View
+        dismiss()
     }
     
     @ViewBuilder
@@ -94,7 +133,7 @@ struct NewExpenseView: View {
             Text(title)
                 .font(.caption)
                 .foregroundStyle(.gray)
-                .hSpacing()
+                .hSpacing(.leading)
             
             TextField(hint, text: value)
                 .padding(.horizontal, 15)
