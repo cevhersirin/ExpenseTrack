@@ -10,6 +10,7 @@ import SwiftUI
 struct TransactionCardView: View {
     @Environment(\.modelContext) private var context
     var transaction: Transaction
+    var showsCategory: Bool = false
     var body: some View {
         
         SwipeAction(cornerRadius: 10, direction: .trailing) {
@@ -32,6 +33,15 @@ struct TransactionCardView: View {
                     Text(format(date: transaction.dateAdded, format: "dd MMM yyyy"))
                         .font(.caption2)
                         .foregroundStyle(.gray)
+                    
+                    if showsCategory {
+                        Text(transaction.category)
+                            .font(.caption2)
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 2)
+                            .foregroundStyle(.white)
+                            .background(categoryColor(Category(rawValue: transaction.category) ?? .expense).gradient, in: .capsule)
+                    }
                 })
                 .lineLimit(1)
                 .hSpacing(.leading)
@@ -47,9 +57,6 @@ struct TransactionCardView: View {
                 context.delete(transaction)
             }
         }
-
-        
-        
     }
 }
 
