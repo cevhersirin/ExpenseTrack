@@ -31,6 +31,20 @@
 		D76AACBE2B7022DE006795D2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76AACBD2B7022DE006795D2 /* CardView.swift */; };
 		D76AACC12B702CA5006795D2 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76AACC02B702CA5006795D2 /* TransactionCardView.swift */; };
 		D77A19BB2B778D87000655B9 /* ChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77A19BA2B778D87000655B9 /* ChartModel.swift */; };
+		D77A19C32B77D019000655B9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77A19C22B77D019000655B9 /* WidgetKit.framework */; };
+		D77A19C52B77D019000655B9 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77A19C42B77D019000655B9 /* SwiftUI.framework */; };
+		D77A19C82B77D019000655B9 /* StatsCardViewBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77A19C72B77D019000655B9 /* StatsCardViewBundle.swift */; };
+		D77A19CA2B77D019000655B9 /* StatsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77A19C92B77D019000655B9 /* StatsCardView.swift */; };
+		D77A19CC2B77D01B000655B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D77A19CB2B77D01B000655B9 /* Assets.xcassets */; };
+		D77A19D02B77D01B000655B9 /* StatsCardViewExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D77A19C02B77D019000655B9 /* StatsCardViewExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D77A19D52B77D135000655B9 /* FilterTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D2EE862B7576AA000E2635 /* FilterTransactionsView.swift */; };
+		D77A19D62B77D15A000655B9 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76AACBB2B7020F2006795D2 /* Date+Extensions.swift */; };
+		D77A19D72B77D160000655B9 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76AACB92B701992006795D2 /* View+Extensions.swift */; };
+		D77A19D82B77D18E000655B9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76AACBD2B7022DE006795D2 /* CardView.swift */; };
+		D77A19D92B77D1B5000655B9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76AACA82B6FE66E006795D2 /* Category.swift */; };
+		D77A19DA2B77D1F8000655B9 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76AACAA2B6FE6C1006795D2 /* Transaction.swift */; };
+		D77A19DB2B77D233000655B9 /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76AACAC2B6FE7C6006795D2 /* TintColor.swift */; };
+		D77A19DC2B77D23F000655B9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7647D0F2B6FDDEC0083F96C /* Constants.swift */; };
 		D7AC4ABA2B703C3F00776CF7 /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AC4AB92B703C3F00776CF7 /* SwipeAction.swift */; };
 		D7D2EE812B72BE9C000E2635 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D2EE802B72BE9C000E2635 /* TransactionView.swift */; };
 		D7D2EE872B7576AA000E2635 /* FilterTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D2EE862B7576AA000E2635 /* FilterTransactionsView.swift */; };
@@ -51,7 +65,28 @@
 			remoteGlobalIDString = D7647CDA2B6FDBD50083F96C;
 			remoteInfo = ExpenseTrack;
 		};
+		D77A19CE2B77D01B000655B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7647CD32B6FDBD50083F96C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D77A19BF2B77D019000655B9;
+			remoteInfo = StatsCardViewExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D77A19D42B77D01B000655B9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D77A19D02B77D01B000655B9 /* StatsCardViewExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D74672F82B7132560049EB35 /* DateFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFilterView.swift; sourceTree = "<group>"; };
@@ -81,6 +116,15 @@
 		D76AACBD2B7022DE006795D2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		D76AACC02B702CA5006795D2 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
 		D77A19BA2B778D87000655B9 /* ChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartModel.swift; sourceTree = "<group>"; };
+		D77A19C02B77D019000655B9 /* StatsCardViewExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StatsCardViewExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D77A19C22B77D019000655B9 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D77A19C42B77D019000655B9 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D77A19C72B77D019000655B9 /* StatsCardViewBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCardViewBundle.swift; sourceTree = "<group>"; };
+		D77A19C92B77D019000655B9 /* StatsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCardView.swift; sourceTree = "<group>"; };
+		D77A19CB2B77D01B000655B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D77A19CD2B77D01B000655B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D77A19DD2B77D2F6000655B9 /* ExpenseTrack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExpenseTrack.entitlements; sourceTree = "<group>"; };
+		D77A19DE2B77D33B000655B9 /* StatsCardViewExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StatsCardViewExtension.entitlements; sourceTree = "<group>"; };
 		D7AC4AB92B703C3F00776CF7 /* SwipeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeAction.swift; sourceTree = "<group>"; };
 		D7D2EE802B72BE9C000E2635 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
 		D7D2EE862B7576AA000E2635 /* FilterTransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTransactionsView.swift; sourceTree = "<group>"; };
@@ -108,15 +152,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D77A19BD2B77D019000655B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D77A19C52B77D019000655B9 /* SwiftUI.framework in Frameworks */,
+				D77A19C32B77D019000655B9 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		D7647CD22B6FDBD50083F96C = {
 			isa = PBXGroup;
 			children = (
+				D77A19DE2B77D33B000655B9 /* StatsCardViewExtension.entitlements */,
 				D7647CDD2B6FDBD50083F96C /* ExpenseTrack */,
 				D7647CEE2B6FDBD80083F96C /* ExpenseTrackTests */,
 				D7647CF82B6FDBD80083F96C /* ExpenseTrackUITests */,
+				D77A19C62B77D019000655B9 /* StatsCardView */,
+				D77A19C12B77D019000655B9 /* Frameworks */,
 				D7647CDC2B6FDBD50083F96C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,6 +183,7 @@
 				D7647CDB2B6FDBD50083F96C /* ExpenseTrack.app */,
 				D7647CEB2B6FDBD80083F96C /* ExpenseTrackTests.xctest */,
 				D7647CF52B6FDBD80083F96C /* ExpenseTrackUITests.xctest */,
+				D77A19C02B77D019000655B9 /* StatsCardViewExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,6 +191,7 @@
 		D7647CDD2B6FDBD50083F96C /* ExpenseTrack */ = {
 			isa = PBXGroup;
 			children = (
+				D77A19DD2B77D2F6000655B9 /* ExpenseTrack.entitlements */,
 				D7647D0E2B6FDDCC0083F96C /* Helpers */,
 				D7647D092B6FDC860083F96C /* Model */,
 				D7647D082B6FDC7C0083F96C /* View */,
@@ -227,6 +285,26 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		D77A19C12B77D019000655B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D77A19C22B77D019000655B9 /* WidgetKit.framework */,
+				D77A19C42B77D019000655B9 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D77A19C62B77D019000655B9 /* StatsCardView */ = {
+			isa = PBXGroup;
+			children = (
+				D77A19C72B77D019000655B9 /* StatsCardViewBundle.swift */,
+				D77A19C92B77D019000655B9 /* StatsCardView.swift */,
+				D77A19CB2B77D01B000655B9 /* Assets.xcassets */,
+				D77A19CD2B77D01B000655B9 /* Info.plist */,
+			);
+			path = StatsCardView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,10 +315,12 @@
 				D7647CD72B6FDBD50083F96C /* Sources */,
 				D7647CD82B6FDBD50083F96C /* Frameworks */,
 				D7647CD92B6FDBD50083F96C /* Resources */,
+				D77A19D42B77D01B000655B9 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D77A19CF2B77D01B000655B9 /* PBXTargetDependency */,
 			);
 			name = ExpenseTrack;
 			productName = ExpenseTrack;
@@ -283,6 +363,23 @@
 			productReference = D7647CF52B6FDBD80083F96C /* ExpenseTrackUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D77A19BF2B77D019000655B9 /* StatsCardViewExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D77A19D12B77D01B000655B9 /* Build configuration list for PBXNativeTarget "StatsCardViewExtension" */;
+			buildPhases = (
+				D77A19BC2B77D019000655B9 /* Sources */,
+				D77A19BD2B77D019000655B9 /* Frameworks */,
+				D77A19BE2B77D019000655B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StatsCardViewExtension;
+			productName = StatsCardViewExtension;
+			productReference = D77A19C02B77D019000655B9 /* StatsCardViewExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -304,6 +401,9 @@
 						CreatedOnToolsVersion = 15.0;
 						TestTargetID = D7647CDA2B6FDBD50083F96C;
 					};
+					D77A19BF2B77D019000655B9 = {
+						CreatedOnToolsVersion = 15.0;
+					};
 				};
 			};
 			buildConfigurationList = D7647CD62B6FDBD50083F96C /* Build configuration list for PBXProject "ExpenseTrack" */;
@@ -322,6 +422,7 @@
 				D7647CDA2B6FDBD50083F96C /* ExpenseTrack */,
 				D7647CEA2B6FDBD80083F96C /* ExpenseTrackTests */,
 				D7647CF42B6FDBD80083F96C /* ExpenseTrackUITests */,
+				D77A19BF2B77D019000655B9 /* StatsCardViewExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -347,6 +448,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D77A19BE2B77D019000655B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D77A19CC2B77D01B000655B9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +508,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D77A19BC2B77D019000655B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D77A19D52B77D135000655B9 /* FilterTransactionsView.swift in Sources */,
+				D77A19D62B77D15A000655B9 /* Date+Extensions.swift in Sources */,
+				D77A19DA2B77D1F8000655B9 /* Transaction.swift in Sources */,
+				D77A19CA2B77D019000655B9 /* StatsCardView.swift in Sources */,
+				D77A19D72B77D160000655B9 /* View+Extensions.swift in Sources */,
+				D77A19DC2B77D23F000655B9 /* Constants.swift in Sources */,
+				D77A19D82B77D18E000655B9 /* CardView.swift in Sources */,
+				D77A19C82B77D019000655B9 /* StatsCardViewBundle.swift in Sources */,
+				D77A19DB2B77D233000655B9 /* TintColor.swift in Sources */,
+				D77A19D92B77D1B5000655B9 /* Category.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -411,6 +537,11 @@
 			isa = PBXTargetDependency;
 			target = D7647CDA2B6FDBD50083F96C /* ExpenseTrack */;
 			targetProxy = D7647CF62B6FDBD80083F96C /* PBXContainerItemProxy */;
+		};
+		D77A19CF2B77D01B000655B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D77A19BF2B77D019000655B9 /* StatsCardViewExtension */;
+			targetProxy = D77A19CE2B77D01B000655B9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -537,8 +668,10 @@
 		D7647D002B6FDBD80083F96C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ExpenseTrack/ExpenseTrack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ExpenseTrack/Preview Content\"";
@@ -568,8 +701,10 @@
 		D7647D012B6FDBD80083F96C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ExpenseTrack/ExpenseTrack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ExpenseTrack/Preview Content\"";
@@ -672,6 +807,62 @@
 			};
 			name = Release;
 		};
+		D77A19D22B77D01B000655B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = StatsCardViewExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KSW9YLW73D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StatsCardView/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StatsCardView;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ExpenseTracks.StatsCardView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D77A19D32B77D01B000655B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = StatsCardViewExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KSW9YLW73D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StatsCardView/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StatsCardView;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ExpenseTracks.StatsCardView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -707,6 +898,15 @@
 			buildConfigurations = (
 				D7647D062B6FDBD80083F96C /* Debug */,
 				D7647D072B6FDBD80083F96C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D77A19D12B77D01B000655B9 /* Build configuration list for PBXNativeTarget "StatsCardViewExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D77A19D22B77D01B000655B9 /* Debug */,
+				D77A19D32B77D01B000655B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
