@@ -30,6 +30,7 @@
 		D76AACBC2B7020F2006795D2 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76AACBB2B7020F2006795D2 /* Date+Extensions.swift */; };
 		D76AACBE2B7022DE006795D2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76AACBD2B7022DE006795D2 /* CardView.swift */; };
 		D76AACC12B702CA5006795D2 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76AACC02B702CA5006795D2 /* TransactionCardView.swift */; };
+		D77A19BB2B778D87000655B9 /* ChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77A19BA2B778D87000655B9 /* ChartModel.swift */; };
 		D7AC4ABA2B703C3F00776CF7 /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AC4AB92B703C3F00776CF7 /* SwipeAction.swift */; };
 		D7D2EE812B72BE9C000E2635 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D2EE802B72BE9C000E2635 /* TransactionView.swift */; };
 		D7D2EE872B7576AA000E2635 /* FilterTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D2EE862B7576AA000E2635 /* FilterTransactionsView.swift */; };
@@ -79,6 +80,7 @@
 		D76AACBB2B7020F2006795D2 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		D76AACBD2B7022DE006795D2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		D76AACC02B702CA5006795D2 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
+		D77A19BA2B778D87000655B9 /* ChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartModel.swift; sourceTree = "<group>"; };
 		D7AC4AB92B703C3F00776CF7 /* SwipeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeAction.swift; sourceTree = "<group>"; };
 		D7D2EE802B72BE9C000E2635 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
 		D7D2EE862B7576AA000E2635 /* FilterTransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTransactionsView.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				D76AACA82B6FE66E006795D2 /* Category.swift */,
 				D76AACAA2B6FE6C1006795D2 /* Transaction.swift */,
 				D76AACAC2B6FE7C6006795D2 /* TintColor.swift */,
+				D77A19BA2B778D87000655B9 /* ChartModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				D76AACBE2B7022DE006795D2 /* CardView.swift in Sources */,
 				D7AC4ABA2B703C3F00776CF7 /* SwipeAction.swift in Sources */,
 				D7647CE12B6FDBD50083F96C /* ContentView.swift in Sources */,
+				D77A19BB2B778D87000655B9 /* ChartModel.swift in Sources */,
 				D7D2EE812B72BE9C000E2635 /* TransactionView.swift in Sources */,
 				D7647D0D2B6FDCA50083F96C /* IntroScreen.swift in Sources */,
 				D76AACA72B6FE1C8006795D2 /* Tab.swift in Sources */,
